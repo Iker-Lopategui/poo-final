@@ -19,3 +19,5 @@ class Hemograma {
         return this.valores.get(parametro);
     }
 }
+
+//
