@@ -21,8 +21,8 @@ public class Main {
             case 3:
                 return "Criança";
             default:
-                System.out.println("Escolha inválida. Usando padrão Mulher adulta.");
-                return "Adulto-Feminino";
+                System.out.println("Escolha inválida. Usando padrão Homem adulto.");
+                return "Adulto-Masculino";
         }
     }
 
@@ -35,7 +35,7 @@ public class Main {
         // Obtendo a categoria de referência do usuário
         String categoria = obterCategoriaReferencia(scanner);
 
-        // Solicitação de dados do hemograma
+        // Solicitar dados do hemograma
         Hemograma hemograma = new Hemograma();
         System.out.println("Insira os dados do hemograma:");
         for (String parametro : valoresReferencia.obterValores(categoria).keySet()) {
@@ -57,5 +57,3 @@ public class Main {
         scanner.close();
     }
 }
-
-//
