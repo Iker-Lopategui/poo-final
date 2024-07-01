@@ -9,10 +9,13 @@ public class Main {
         System.out.println("1. Homem adulto");
         System.out.println("2. Mulher adulta");
         System.out.println("3. Criança");
-        System.out.print("Digite o número correspondente à sua escolha (1, 2 ou 3): ");
-        
+        System.out.println("4. Adolescente");
+        System.out.println("5. Homem idoso");
+        System.out.println("6. Mulher idosa");
+        System.out.print("Digite o número correspondente à sua escolha (1 a 6): ");
+
         int escolha = scanner.nextInt();
-        
+
         switch (escolha) {
             case 1:
                 return "Adulto-Masculino";
@@ -20,6 +23,12 @@ public class Main {
                 return "Adulto-Feminino";
             case 3:
                 return "Criança";
+            case 4:
+                return "Adolescente";
+            case 5:
+                return "Idoso-Masculino";
+            case 6:
+                return "Idoso-Feminino";
             default:
                 System.out.println("Escolha inválida. Usando padrão Homem adulto.");
                 return "Adulto-Masculino";
@@ -44,7 +53,7 @@ public class Main {
             hemograma.adicionarValor(parametro, valor);
         }
 
-        // Comparação com os valores de referência
+        // Comparação com os valores referência
         Map<String, FaixaValores> valoresReferenciaUsuario = valoresReferencia.obterValores(categoria);
         for (String parametro : hemograma.valores.keySet()) {
             double valor = hemograma.obterValor(parametro);

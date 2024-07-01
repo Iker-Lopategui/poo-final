@@ -7,6 +7,8 @@ import java.sql.SQLException;
 import Conexao.Conexao;
 import Entity.Usuario;
 
+// Método para cadastro de usuário no banco de dados
+
 public class UsuarioDAO {
     
     public void cadastrarUsuario(Usuario usuario) {

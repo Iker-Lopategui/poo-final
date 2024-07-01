@@ -9,12 +9,12 @@ class Hemograma {
         this.valores = new HashMap<>();
     }
 
-    // Método para adicionar um valor ao hemograma
+    // Adicionar um valor ao hemograma
     public void adicionarValor(String parametro, double valor) {
         this.valores.put(parametro, valor);
     }
 
-    // Método para obter um valor do hemograma
+    // Obter um valor do hemograma
     public double obterValor(String parametro) {
         return this.valores.get(parametro);
     }

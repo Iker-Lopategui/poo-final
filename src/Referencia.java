@@ -1,7 +1,7 @@
 import java.util.HashMap;
 import java.util.Map;
 
-// Classe para armazenar os valores de referência por idade e gênero
+// Classe para armazenar os valores referência por idade e gênero
 class ValoresReferencia {
     private Map<String, Map<String, FaixaValores>> valores;
 
@@ -76,9 +76,78 @@ class ValoresReferencia {
         valoresCrianca.put("Contagem de Plaquetas", new FaixaValores(150000, 450000, "/µL"));
 
         this.valores.put("Criança", valoresCrianca);
+
+        // Adicionando os valores de referência para um adolescente
+        Map<String, FaixaValores> valoresAdolescente = new HashMap<>();
+        // Valores para eritrograma em adolescente
+        valoresAdolescente.put("Hemoglobina", new FaixaValores(12.0, 15.5, "g/dL"));
+        valoresAdolescente.put("Hematócrito", new FaixaValores(36, 46, "%"));
+        valoresAdolescente.put("Volume Celular Médio", new FaixaValores(80.0, 100.0, "fL"));
+        valoresAdolescente.put("Hemoglobina Celular Média", new FaixaValores(27.0, 32.0, "pg"));
+        valoresAdolescente.put("Concentração de Hemoglobina Celular", new FaixaValores(31.0, 36.0, "g/dL"));
+        valoresAdolescente.put("Contagem de Glóbulos Vermelhos", new FaixaValores(4.0, 5.5, "milhões/µL"));
+        valoresAdolescente.put("Amplitude de Distribuição dos Eritrócitos", new FaixaValores(10, 16, "%"));
+        // Valores para leucograma em adolescente
+        valoresAdolescente.put("Contagem de Glóbulos Brancos", new FaixaValores(4000, 11000, "/µL"));
+        valoresAdolescente.put("Contagem Diferencial de Glóbulos Brancos - Neutrófilos Bastonetes", new FaixaValores(0, 800, "/µL"));
+        valoresAdolescente.put("Contagem Diferencial de Glóbulos Brancos - Neutrófilos Segmentados", new FaixaValores(1600, 8000, "/µL"));
+        valoresAdolescente.put("Contagem Diferencial de Glóbulos Brancos - Linfócitos", new FaixaValores(900, 4000, "/µL"));
+        valoresAdolescente.put("Contagem Diferencial de Glóbulos Brancos - Monócitos", new FaixaValores(100, 1000, "/µL"));
+        valoresAdolescente.put("Contagem Diferencial de Glóbulos Brancos - Eosinófilos", new FaixaValores(0, 500, "/µL"));
+        valoresAdolescente.put("Contagem Diferencial de Glóbulos Brancos - Basófilos", new FaixaValores(0, 200, "/µL"));
+        // Valores para plaquetas em adolescente
+        valoresAdolescente.put("Contagem de Plaquetas", new FaixaValores(150000, 400000, "/µL"));
+
+        this.valores.put("Adolescente", valoresAdolescente);
+
+        // Adicionando os valores de referência para um homem idoso
+        Map<String, FaixaValores> valoresHomemIdoso = new HashMap<>();
+        // Valores para eritrograma em homem idoso
+        valoresHomemIdoso.put("Hemoglobina", new FaixaValores(12.0, 15.5, "g/dL"));
+        valoresHomemIdoso.put("Hematócrito", new FaixaValores(36, 46, "%"));
+        valoresHomemIdoso.put("Volume Celular Médio", new FaixaValores(80.0, 100.0, "fL"));
+        valoresHomemIdoso.put("Hemoglobina Celular Média", new FaixaValores(27.0, 32.0, "pg"));
+        valoresHomemIdoso.put("Concentração de Hemoglobina Celular", new FaixaValores(31.0, 36.0, "g/dL"));
+        valoresHomemIdoso.put("Contagem de Glóbulos Vermelhos", new FaixaValores(4.0, 5.5, "milhões/µL"));
+        valoresHomemIdoso.put("Amplitude de Distribuição dos Eritrócitos", new FaixaValores(10, 16, "%"));
+        // Valores para leucograma em homem idoso
+        valoresHomemIdoso.put("Contagem de Glóbulos Brancos", new FaixaValores(4000, 10000, "/µL"));
+        valoresHomemIdoso.put("Contagem Diferencial de Glóbulos Brancos - Neutrófilos Bastonetes", new FaixaValores(0, 700, "/µL"));
+        valoresHomemIdoso.put("Contagem Diferencial de Glóbulos Brancos - Neutrófilos Segmentados", new FaixaValores(1500, 7000, "/µL"));
+        valoresHomemIdoso.put("Contagem Diferencial de Glóbulos Brancos - Linfócitos", new FaixaValores(800, 3000, "/µL"));
+        valoresHomemIdoso.put("Contagem Diferencial de Glóbulos Brancos - Monócitos", new FaixaValores(100, 800, "/µL"));
+        valoresHomemIdoso.put("Contagem Diferencial de Glóbulos Brancos - Eosinófilos", new FaixaValores(0, 400, "/µL"));
+        valoresHomemIdoso.put("Contagem Diferencial de Glóbulos Brancos - Basófilos", new FaixaValores(0, 200, "/µL"));
+        // Valores para plaquetas em homem idoso
+        valoresHomemIdoso.put("Contagem de Plaquetas", new FaixaValores(140000, 400000, "/µL"));
+
+        this.valores.put("Idoso-Masculino", valoresHomemIdoso);
+
+        // Adicionando os valores de referência para uma mulher idosa
+        Map<String, FaixaValores> valoresMulherIdosa = new HashMap<>();
+        // Valores para eritrograma em mulher idosa
+        valoresMulherIdosa.put("Hemoglobina", new FaixaValores(11.5, 15.0, "g/dL"));
+        valoresMulherIdosa.put("Hematócrito", new FaixaValores(34, 44, "%"));
+        valoresMulherIdosa.put("Volume Celular Médio", new FaixaValores(80.0, 100.0, "fL"));
+        valoresMulherIdosa.put("Hemoglobina Celular Média", new FaixaValores(27.0, 32.0, "pg"));
+        valoresMulherIdosa.put("Concentração de Hemoglobina Celular", new FaixaValores(31.0, 36.0, "g/dL"));
+        valoresMulherIdosa.put("Contagem de Glóbulos Vermelhos", new FaixaValores(3.8, 5.2, "milhões/µL"));
+        valoresMulherIdosa.put("Amplitude de Distribuição dos Eritrócitos", new FaixaValores(10, 16, "%"));
+        // Valores para leucograma em mulher idosa
+        valoresMulherIdosa.put("Contagem de Glóbulos Brancos", new FaixaValores(3800, 10000, "/µL"));
+        valoresMulherIdosa.put("Contagem Diferencial de Glóbulos Brancos - Neutrófilos Bastonetes", new FaixaValores(0, 600, "/µL"));
+        valoresMulherIdosa.put("Contagem Diferencial de Glóbulos Brancos - Neutrófilos Segmentados", new FaixaValores(1400, 7000, "/µL"));
+        valoresMulherIdosa.put("Contagem Diferencial de Glóbulos Brancos - Linfócitos", new FaixaValores(800, 3500, "/µL"));
+        valoresMulherIdosa.put("Contagem Diferencial de Glóbulos Brancos - Monócitos", new FaixaValores(100, 700, "/µL"));
+        valoresMulherIdosa.put("Contagem Diferencial de Glóbulos Brancos - Eosinófilos", new FaixaValores(0, 400, "/µL"));
+        valoresMulherIdosa.put("Contagem Diferencial de Glóbulos Brancos - Basófilos", new FaixaValores(0, 200, "/µL"));
+        // Valores para plaquetas em mulher idosa
+        valoresMulherIdosa.put("Contagem de Plaquetas", new FaixaValores(150000, 400000, "/µL"));
+
+        this.valores.put("Idoso-Feminino", valoresMulherIdosa);
     }
 
-    // Método para obter os valores referência de uma determinada idade
+    // Método para obter os valores referência de uma determinada categoria
     public Map<String, FaixaValores> obterValores(String categoria) {
         return this.valores.get(categoria);
     }
@@ -109,4 +178,3 @@ class FaixaValores {
     }
 }
 
-//
